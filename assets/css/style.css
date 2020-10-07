@@ -1,0 +1,149 @@
+:root{
+	--couleur:blue;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	color: var(--couleur);
+	background: cyan;
+}
+
+html, body, #map {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0; 
+}
+
+
+nav{
+	display: flex;
+	padding: 0 100px 50px;
+	margin-top: 50px;
+	justify-content: space-between;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top:10px;
+	z-index: 400;
+	/*background: #F00;*/
+}
+
+nav>*{
+	background: none;
+	border: 0;
+	font-size: 40px;
+	line-height: 1.15em;
+	padding: 0;
+	margin: 0;
+	color: var(--couleur);
+	font-weight: normal;
+	text-align: baseline;
+}
+
+#map{
+	position: relative;
+	z-index: 100;
+}
+
+.leaflet-container{
+	background: cyan;
+}
+
+main{
+	position: relative;
+	display: grid;
+	grid-gap: 0;
+	grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+	grid-auto-rows: var(--pas);
+	/*margin-top: calc(3 * var(--pas));*/
+	/*padding: 0;*/
+	/*padding-bottom: calc(var(--pas) * 2);*/
+}
+
+section{
+	position: relative;
+	overflow: hidden;
+	/* CARD CSS */
+	/* https://codepen.io/desandro/pen/LmWozd */
+	cursor: pointer;
+	transform-style: preserve-3d;
+	transform-origin: center right;
+	transition: transform 1s;
+}
+
+section.is-flipped {
+	transform: translateX(-100%) rotateY(-180deg);
+}
+
+section div {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+	backface-visibility: 		 hidden;
+}
+
+
+
+section div.front>img{
+	max-width: 100%;
+	max-height: 100%; 
+	display: block;
+}
+
+section div.back{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	background: #FFF;
+	color: #000;
+	transform: rotateY(180deg);
+}
+
+#about{
+	position: fixed;
+	top: 50px;
+	left:50px;
+	right: 50px;
+	bottom:50px;
+	background: red;
+	z-index: 300;
+	padding: 50px;
+	pointer-events: none;
+}
+
+#about p{
+	margin: 0;
+	font-size:40px;
+	/*font-weight: bold;*/
+}
+
+#about p:first-child{
+	margin-top: 40px;
+}
+
+
+#cadre{
+	position: fixed;
+	top: 50px;
+	left:50px;
+	right: 50px;
+	bottom:50px;
+	background: red;
+	z-index: 300;
+	display: flex;
+}
+
+#cadre img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}

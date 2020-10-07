@@ -1,0 +1,32 @@
+{
+	"nom":"Lucie Clause",
+	"titre":"Deep Dream Document",
+	"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est odio corporis quisquam, doloribus sit laudantium distinctio sunt quas velit repellendus corrupti id a, iusto tempora, alias! Velit incidunt ea, culpa!",
+	"images":[
+		{
+			"fichier":"1.jpg",
+			"x":1000,
+			"y":1000
+		},
+		{
+			"fichier":"3.jpg",
+			"x":2000,
+			"y":3000
+		},
+		{
+			"fichier":"4.jpg",
+			"x":4000,
+			"y":4000
+		},
+		{
+			"fichier":"5.jpg",
+			"x":4000,
+			"y":5000
+		},
+		{
+			"fichier":"6.jpg",
+			"x":4000,
+			"y":6000
+		}
+	]
+}
