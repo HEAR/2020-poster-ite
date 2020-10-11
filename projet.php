@@ -34,7 +34,9 @@ if(is_file($dossier.'/data.json')){
         
         var automod = <?= $automod==true ? "true\n" : "false\n" ?>
         var dossier = '<?= $dossier ?>'
-        var images = <?= json_encode($data->images) ?>
+        var images  = <?= json_encode($data->images) ?>
+        
+        var maxZoom = <?= count(GLOB($dossier."/affiche/*")) - 1  ?> 
 
     </script>
     <script src="assets/js/script.js"></script>

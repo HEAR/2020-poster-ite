@@ -3,6 +3,7 @@ var dureeAutoMode = 5000
 function init() {
 	var mapMinZoom = 0
 	var mapMaxZoom = 6
+	var mapMaxZoom = maxZoom
 	var map = L.map('map', {
 		maxZoom: mapMaxZoom,
 		minZoom: mapMinZoom,
@@ -18,6 +19,7 @@ function init() {
 		map.unproject([7168, 0], mapMaxZoom))
 
 	map.fitBounds(mapBounds)
+	
 	L.tileLayer(dossier + '/affiche/{z}/{x}/{y}.png', {
 		minZoom: mapMinZoom, maxZoom: mapMaxZoom,
 		bounds: mapBounds,
