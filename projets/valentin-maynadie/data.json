@@ -1,0 +1,32 @@
+{
+	"nom":"Valentin Maynadié",
+	"titre":"Aaronsw artificial thoughts",
+	"description":"La refabrication d’un être moral en ligne et son émancipation. Hacker et activiste américain, Aaron Swartz décède en 2013 à l'âge de 26 ans.<br>Tout ce qu’il a partagé et crée sur les réseaux sous le pseudonyme «Aaronsw» forme une trace persistante de son existence sur la toile.<br>Aujourd'hui plus que jamais, par le déplacement progressif de nos lieux d'interaction vers le cyberespace, nos données en ligne semblent nous échapper et créent ce qu'on pourrait nommer un \"Ghost d'une existence numérique\".<br>Pour mettre en évidence ce \"second nous\", mon travail consiste à rassembler et traiter cette matière numérique qu'est la donnée en réincarnant ce \"Ghost\", Aaronsw, dans une intelligence artificielle qui génère des pensées en direct et en continu.<br>Les éditions qui l'accompagnent recueillent les réactions de l'IA face à des faits d'actualité récents, qui auraient sûrement interpellé Aaron Swartz s'il avait été vivant aujourd'hui.",
+	"images":[
+		{
+			"fichier":"1.jpg",
+			"x":971,
+			"y":1000
+		},
+		{
+			"fichier":"2.jpg",
+			"x":2326,
+			"y":7618
+		},
+		{
+			"fichier":"3.jpg",
+			"x":4508,
+			"y":8626
+		},
+		{
+			"fichier":"4.jpg",
+			"x":6229,
+			"y":7768
+		},
+		{
+			"fichier":"5.jpg",
+			"x":5743,
+			"y":5836
+		}
+	]
+}

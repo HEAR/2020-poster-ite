@@ -1,0 +1,32 @@
+{
+	"nom":"Marie Damageux",
+	"titre":"Correspondance",
+	"description":"Je ne parle pas la langue maternelle de ma mère et elle ne s’écrit pas.<br>Ce projet est une correspondance qui va par delà les barrières du langage. Un lien entre ma vie en France et mes origines peules par la mise en place d’un protocole d’échange avec ma famille au nord du Bénin. Comprendre au travers d’expériences photographiques, de vidéos partagées, d’appels échangés, de larges tissus sérigraphiés, et de conversations traditions, une culture et une langue qui m’étaient jusqu’ici presque inconnues et que j’ai pu redécouvrir au travers des outils dont je disposais, en tant que designer graphique. Un moyen d’aller chercher l’autre, et de me chercher moi au travers de ce qu’ils pouvaient m’apprendre.",
+	"images":[
+		{
+			"fichier":"1.png",
+			"x":1700,
+			"y":6157
+		},
+		{
+			"fichier":"2.png",
+			"x":2680,
+			"y":1120
+		},
+		{
+			"fichier":"3.png",
+			"x":4532,
+			"y":4137
+		},
+		{
+			"fichier":"4.png",
+			"x":3876,
+			"y":3460
+		},
+		{
+			"fichier":"5.png",
+			"x":6661,
+			"y":9911
+		}
+	]
+}

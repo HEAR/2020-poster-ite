@@ -1,0 +1,27 @@
+{
+	"nom":"Lucile Weber",
+	"titre":"Pas plus tard",
+	"description":"Pas plus tard est un collectif qui vise à l’action face au dérèglement climatique, en mettant en valeur le pouvoir de chacun.e et la force du collectif lorsqu'il est au sein d'un cercle de parole bienveillant. Dans ce lieu nous chercherons à prendre conscience du système productiviste inégalitaire dans lequel nous vivons et nos liens sur celui-ci. Nous avons pour but de comprendre l'écosystème dont nous faisons parti, et de mettre en place des alternatives locales et durables. Ici, mon rôle, en tant que graphiste et médiatrice, est de concevoir un protocole, afin de rendre visible cette résilience. En travaillant avec une logique de production décroissante, je cherche à faire émerger de nouvelles formes visuelles de vies.",
+	"images":[
+		{
+			"fichier":"1.jpg",
+			"x":300,
+			"y":9000
+		},
+		{
+			"fichier":"3.jpg",
+			"x":6000,
+			"y":2000
+		},
+		{
+			"fichier":"4.jpg",
+			"x":1600,
+			"y":3000
+		},
+		{
+			"fichier":"5.jpg",
+			"x":3000,
+			"y":1000
+		}
+	]
+}

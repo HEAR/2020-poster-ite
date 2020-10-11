@@ -1,0 +1,32 @@
+{
+	"nom":"Lyne EA",
+	"titre":"Between Betwixt",
+	"description":"Between Betwixt est le résultat d’une enquête autour des objets rituels qui rythment les différents rassemblements dans les temples et autour desquels se réunissent les communautés asiatiques. Le projet vient s’intéresser à la divination, la prière, la crémation et tout autre procédé qui aborde la gestion de notre relation avec l’invisible, l’inconnu, l’imprévisible. En recomposant un espace qui reprenne les principes de quelques dispositifs traditionnels, j’ai souhaité à travers l’exploration des codes esthétiques et performatifs, proposer une alternative contemporaine à des coutumes largement établies. Quels sont les enjeux psychologiques, sociaux et humains ? Comment repenser les catégories d’objets votifs ? Est-il possible de recréer une expérience numérique des pratiques traditionnelles?De multiples problématiques sont abordées à travers la question du rituel, de la performance et du récit, dans la création d'un espace de partage et de contemplation autour de l'intime.",
+	"images":[
+		{
+			"fichier":"1.jpg",
+			"x":2640,
+			"y":600
+		},
+		{
+			"fichier":"2.jpg",
+			"x":4800,
+			"y":1500
+		},
+		{
+			"fichier":"3.jpg",
+			"x":900,
+			"y":3660
+		},
+		{
+			"fichier":"4.jpg",
+			"x":3220,
+			"y":5000
+		},
+		{
+			"fichier":"5.jpg",
+			"x":400,
+			"y":6780
+		}
+	]
+}

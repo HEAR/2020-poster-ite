@@ -1,0 +1,32 @@
+{
+	"nom":"Morgat Bry",
+	"titre":"Micron acte 2",
+	"description":"Peut-on conjuguer aujourd'hui le détournement vidéo politique et l'humour sur le net? Y a-t-il une place pour la satire sur Youtube? Micron peut-il sauver la France des dérives de la gauche et du chômage partiel? Autant de questions qui peuvent peut-être trouver en partie leurs réponses dans l'animé Micron, défenseur des 1%. Mixant figures politiques et archétypes et références liés aux cultures populaires du web, la presque série interroge autant l'actualité que les outils graphiques mobilisés.<br>Cet animé m'a autant plu qu'il m'a énervé. En effet, ce film peut-être apprécié comme il peut être haï parce qu'il tranche le vif et ne fait pas dans la dentelle. Il faut dire que ce film partait sur de bien mauvaises bases, écrivaillon de seconde zone chic, son réalisateur nous avait fait part d'un premier opus peu concluant, mais celui-ci, ma foi, est à l'image de l'auteur. Tape-à-l'œil et bruyant.<br>Cependant son scénario acide et sa voix off font de ce film une rareté à ne rater sous aucun prétexte, surtout pour cette fin jouissive.",
+	"images":[
+		{
+			"fichier":"1.jpg",
+			"x":3637,
+			"y":2147
+		},
+		{
+			"fichier":"2.jpg",
+			"x":4968,
+			"y":2498
+		},
+		{
+			"fichier":"3.jpg",
+			"x":1885,
+			"y":7161
+		},
+		{
+			"fichier":"4.jpg",
+			"x":3677,
+			"y":7006
+		},
+		{
+			"fichier":"5.jpg",
+			"x":5031,
+			"y":7031
+		}
+	]
+}

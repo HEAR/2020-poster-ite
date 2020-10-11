@@ -1,0 +1,32 @@
+{
+	"nom":"Valentine Cascailh",
+	"titre":"Dix fois mieux",
+	"description":"Il est difficile de croire qu’il puisse y avoir une sérénité totale dans l’art de s’embellir. Les deux projets éditoriaux traitent parallèlement le sujet des normes de beauté au travers du temps et des cultures.Dix fois mieux est une collection de conseils de beauté adressés aux femmes de 1967 à 2020. Les citations extraites de la presse féminine, d’émissions télévisées et de tutoriels YouTube, sont isolées et dé-contextualisées. Les paroles deviennent alors ambiguës: diktats et poésie à la fois, questionnant la construction collective de ce qu’est la beauté. Le projet éditorial Template est une collection d’outils de beauté issus du site Aliexpress. Sculptants et sculpturaux, ces objets visent à modeler le visage, pôle identitaire du corps, convergeant tous vers un seul et même modèle.",
+	"images":[
+		{
+			"fichier":"1.jpg",
+			"x":1066,
+			"y":2890
+		},
+		{
+			"fichier":"2.jpg",
+			"x":3946,
+			"y":1290
+		},
+		{
+			"fichier":"3.jpg",
+			"x":4125,
+			"y":6090
+		},
+		{
+			"fichier":"4.jpg",
+			"x":16060,
+			"y":7730
+		},
+		{
+			"fichier":"5.jpg",
+			"x":6700,
+			"y":8490
+		}
+	]
+}

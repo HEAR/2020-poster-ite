@@ -1,0 +1,32 @@
+{
+	"nom":"Marie Serrié",
+	"titre":"Je suis désemparée, communiquez avec moi",
+	"description":"Mon travail avait commencé comme une recherche de boîte à outils graphique à l’usage du Comité Inter Associatif de l’école. Ce projet s’imaginait avec la participation des étudiants et, coupée du terrain, j’ai d’abord voulu faire de cette boîte à outils une typographie ouverte. La réduction de mes moyens à des feuilles A4 et des crayons m’a ramenée à une grille de base qui me posait des questions de règles, de normes et de rigidité. Dans un second temps ce qui avait commencé comme une recherche d’une réponse clefs en main a donc glissé vers le questionnement à travers des lettrages, d’une grille devenue matrice de déformation, souple, variable, tangible. Cela dans une recherche de singularités plutôt que d’une neutralité par ailleurs contestable.",
+	"images":[
+		{
+			"fichier":"01.jpg",
+			"x":415,
+			"y":400
+		},
+		{
+			"fichier":"02.jpg",
+			"x":4084,
+			"y":1506
+		},
+		{
+			"fichier":"03.jpg",
+			"x":3175,
+			"y":4257
+		},
+		{
+			"fichier":"04.jpg",
+			"x":764,
+			"y":6260
+		},
+		{
+			"fichier":"05.jpg",
+			"x":4940,
+			"y":7560
+		}
+	]
+}

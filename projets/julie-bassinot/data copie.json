@@ -1,0 +1,32 @@
+{
+	"nom":"Julie Bassinot",
+	"titre":"Supervision",
+	"description":"L'unité de recherche Supervision mène une investigation sur le clivage entre la vision immédiate et la vision appareillée. Elle explore les marges d'erreurs et les distorsions visuelles perçues au travers d'appareils technologiques. Partant du constant qu'expérimenter, c'est s'émanciper des règles, Supervision s’appropri puis détourne l'utilisation du smartphone et propose une émancipation des usages conventionnels et normés de ces appareils. Dès lors, l'unité développe une recherche à tâtons qui accepte une certaine perte de contrôle. Cette démarche exploratoire et expérimentale défini le smartphone comme une matière flexible et n'est plus vu comme le simple moyen d'accomplir une tâche.",
+	"images":[
+		{
+			"fichier":"1.png",
+			"x":40,
+			"y":44
+		},
+		{
+			"fichier":"2.png",
+			"x":74,
+			"y":27
+		},
+		{
+			"fichier":"3.gif",
+			"x":22,
+			"y":38
+		},
+		{
+			"fichier":"4.png",
+			"x":14,
+			"y":93
+		},
+		{
+			"fichier":"5.png",
+			"x":53,
+			"y":83
+		}
+	]
+}

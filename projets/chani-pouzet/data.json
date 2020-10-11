@@ -1,0 +1,32 @@
+{
+	"nom":"Chani Pouzet",
+	"titre":"La fuite",
+	"description":"Le samedi 28 février 2015, une importante fuite causée par une rupture sur une tuyauterie d'un circuit d'eau non radioactive destinée au réacteur n° 1 s'est produite au sein de la centrale nucléaire de Fessenheim. Un volume d'eau de plus de 100m3 s'est répandu dans la salle des machines. Suite à la fuite, quatre ans de procès, un rapport d'inspection, une plainte, deux audiences, un appel, un arrêt, un pourvoi, un rejet. Moins d'un an après la fin du procès, la centrale ferme. Sept jours après, une deuxième fuite se produit. L'histoire se retrace à travers un film réalisé à partir d'images d'archives, d'un livre réunissant toutes les données des quatre ans de procès pour mieux les comprendre, mais aussi de correspondances d'archives sous forme de cartes. Il s'agit d'explorer pourquoi un incident si mineur dans l'histoire de la centrale, a entraîné un procès, puis sa fermeture.",
+	"images":[
+		{
+			"fichier":"1.jpg",
+			"x":1600,
+			"y":800
+		},
+		{
+			"fichier":"2.jpg",
+			"x":200,
+			"y":2000
+		},
+		{
+			"fichier":"3.jpg",
+			"x":4500,
+			"y":1500
+		},
+		{
+			"fichier":"4.jpg",
+			"x":2300,
+			"y":4000
+		},
+		{
+			"fichier":"5.jpg",
+			"x":800,
+			"y":1200
+		}
+	]
+}

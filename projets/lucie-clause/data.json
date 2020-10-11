@@ -1,32 +1,39 @@
 {
 	"nom":"Lucie Clause",
 	"titre":"Deep Dream Document",
-	"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est odio corporis quisquam, doloribus sit laudantium distinctio sunt quas velit repellendus corrupti id a, iusto tempora, alias! Velit incidunt ea, culpa!",
+	"description":"Deep Dream Document est un projet qui explore les mécanismes de communication, d’exposition et de diffusion des œuvres au travers leurs récits. En 1980, Roland Barthes attestait dans la Chambre Claire que la photographie affirmait la présence de son référent à l’image par l’emploi récurrent du « ça a été ». Aujourd’hui, on suspecte les doubles numériques, et on spécule sur les expositions au travers de récits avant même de les avoir vues: « ça a l’air bon », ou bien « ça a l’air mauvais ». Le noyau dur du projet est une archive de critiques générées par une intelligence artificielle, autour de laquelle gravitent différentes expériences d’exposition de diffusion et d’interprétation (journaux, supports d’expositions, captations d’images) qui visent à détourner l’attention d’un public pour son œuvre, vers son audience: les nouveaux travailleurs culturels. Les récits de public à l’ère du numérique, supplantent-ils la critique institutionnelle ?",
 	"images":[
 		{
 			"fichier":"1.jpg",
-			"x":1000,
-			"y":1000
+			"x":1190,
+			"y":915
 		},
+
+		{
+			"fichier":"2.jpg",
+			"x":5600,
+			"y":9700
+		},
+
 		{
 			"fichier":"3.jpg",
-			"x":2000,
-			"y":3000
+			"x":1200,
+			"y":2400
 		},
 		{
 			"fichier":"4.jpg",
-			"x":4000,
-			"y":4000
+			"x":1500,
+			"y":3000
 		},
 		{
 			"fichier":"5.jpg",
-			"x":4000,
-			"y":5000
+			"x":6200,
+			"y":3000
 		},
 		{
 			"fichier":"6.jpg",
-			"x":4000,
-			"y":6000
+			"x":2170,
+			"y":8000
 		}
 	]
 }

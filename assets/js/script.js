@@ -1,3 +1,5 @@
+var dureeAutoMode = 5000
+
 function init() {
 	var mapMinZoom = 0
 	var mapMaxZoom = 6
@@ -15,11 +17,10 @@ function init() {
 		map.unproject([0, 10240], mapMaxZoom),
 		map.unproject([7168, 0], mapMaxZoom))
 
-	map.fitBounds(mapBounds);
+	map.fitBounds(mapBounds)
 	L.tileLayer(dossier + '/affiche/{z}/{x}/{y}.png', {
 		minZoom: mapMinZoom, maxZoom: mapMaxZoom,
 		bounds: mapBounds,
-		attribution: 'Rendered with <a href="http://www.maptiler.com/">MapTiler</a>',
 		noWrap: true          
 	}).addTo(map)
 
@@ -27,57 +28,95 @@ function init() {
 	let markers = new Array()
 
 	images.forEach( image => {
-		console.log(image)
-
 		markers.push(
-			L.marker( xy(image.x,image.y)  )
+			L.circleMarker( xy(image.x,image.y),{
+				stroke: false,
+				fill: 'blue',
+				opacity: 1,
+				fillOpacity: 1,
+				radius: 5
+			}  )
 			.addTo(map)
 			.on('click',function(){
-				$("#cadre")
-				.empty()
-				.append( `<img src="${dossier}/images/${image.fichier}" >` )
-				.show()
 
-			}
-		))
+				let closeBtn = $("<button>[x]</button>").click(function(event){
+					$(this).parent().remove()
+				})
+
+				var largeur = Math.random()* ($('body').width()*2/3 )
+
+				let cadre = $("<div class='cadre'>")
+				.width( largeur )
+				.css('top', Math.random() * $('body').height() / 2)
+				.css('left', Math.random() * ( $('body').width() - largeur ) )
+				.append( `<img src="${dossier}/images/${image.fichier}" >` )
+				.append( closeBtn )
+				.draggable({
+					stack: ".cadre"
+				})
+
+				console.log(cadre)
+
+				$('#cadre').append(cadre)
+			})
+		)
 
 	})
 
-	
+	if(automod){
+		let clickId = 0
+
+		
+		// PROJET
+		console.log("projet auto")
+		let metro = setInterval(function(){
+			if(clickId >= markers.length){
+				clearInterval(metro)
+
+				$("nav>button").trigger("click")
+			}else{
+				markers[clickId].fire('click')
+				console.log("click",$(markers[clickId]))
+			}
+			clickId ++
+		}, dureeAutoMode)
+	}
 }
-
-
 
 
 
 $(function(){
 
-	$("#cadre, #about").hide()
+	console.log( "POSTER-ITÉ > mode Auto : ", automod)
+
+	$("#about, .close").hide()
 
 	$("nav>button").click(function(){
 		$("#about").toggle()
+		$(this).find(".close").toggle()
+		$("main, #map, #cadre, .cadre").toggleClass("hidden")
 	})
 
-	$("section")
-	.mouseenter(function(event){
-		$(this).addClass( "is-flipped" )
-	})
-	.mouseleave(function(event){
-		$(this).removeClass( "is-flipped" )
-	})
-
-	$("#cadre").click(function(event){
-		$(this).hide()
-
-		event.stopEventPropagation()
-	});
-
-	console.log("ok")
-	// console.log(images)
-	// 
 	
-	if($('#map').length > 0){
+	if( $('#map').length > 0 ){
 		init()
 	}
 
+	if(automod && $('body').hasClass('home')){
+		let clickId = 0
+		// ACCUEIL
+		console.log("home auto")
+		let metro = setInterval(function(){
+			$("section").removeClass('hover')
+			if(clickId >= $("section").length){
+				clearInterval(metro)
+
+				$("nav>button").trigger("click")
+			}else{
+				$("section").eq(clickId).addClass('hover')
+				console.log("over",$("section").eq(clickId))
+			}
+			clickId ++
+		}, dureeAutoMode)
+	}
 })

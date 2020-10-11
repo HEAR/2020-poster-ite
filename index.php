@@ -1,48 +1,77 @@
-<!DOCTYPE html>
+<?php 
+
+if(isset($_GET['auto'])){
+	$automod = true;
+}else{
+	$automod = false;
+}
+
+ ?><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Poster-ité</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="assets/vendor/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/vendor/leaflet.js"></script>
+    <script src="assets/vendor/jquery-3.5.1.min.js"></script>
+    <script src="assets/vendor/jquery-ui.js"></script>
+	<script>
+		
+		var automod = <?= $automod==true ? "true\n" : "false\n" ?>
+
+	</script>
     <script src="assets/js/script.js"></script>
 </head>
-<body>
+<body class="home">
 
 	<nav>
-		<h1></h1>
-		<button>à propos</button>
+		<h1>Poster-ité</h1>
+		<span>HEAR Strasbourg</span>
+		<button>à propos <span class="close">[x]</span></button>
 	</nav>
 	
 
 	<div id="about">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis illum maiores ut assumenda impedit, corrupti, numquam explicabo, eius obcaecati quis cumque in temporibus natus consequatur nostrum ab sed qui perferendis.<br>Odio temporibus error voluptatum magni nemo soluta harum nulla quas numquam! Quam amet harum, esse reprehenderit voluptas illum asperiores sapiente molestias, ducimus quaerat! Iusto, porro, ipsum. Recusandae dolor, esse veritatis.</p>
+		<p>L’atelier de Communication graphique de la Haute école des arts du Rhin (<a href="http://hear.fr" target="_blank">HEAR</a>) a pour vocation l’émergence de personnalités singulières dans le domaine du graphisme et forme plus généralement des auteurs dans les professions liées à la création visuelle, au sens le plus large. Les enseignements permettent à l’étudiant·e de se situer par rapport à ces métiers en perpétuelle évolution de la manière la plus contemporaine tout en étant nourris par l’histoire et les enjeux théoriques de la discipline et des champs artistiques connexes.</p>
+		<p>L'exposition au Tri postal de Lille présente une série d'affiches accompagnée d'un site web réalisés par les diplômé·es de la promotion 2020.</p>
+		<p>Exposition Émergences, Design is capital, Lille 10.10.2020→18.10.2020</p>
+		<p>Coordination de l'exposition et du site web : Julie Bassinot, Lucie Clause✨, Marie Damageux✨, Loïc Horellou, Chani Pouzet.</p>
 	</div>
 
 	<main>
 
-	<?php foreach (GLOB("projets/*") as $key => $dossier) : ?>
+	<?php 
+
+	$liste = GLOB("projets/*");
+	shuffle($liste);
+
+	foreach ( $liste as $key => $dossier ) : ?>
 
 		<!-- <?= $dossier?> -->
-		
+		<?php if( is_file("$dossier/vignette.jpg") ) : ?>
 		<section>
-			<div class="front">
-				<a href="projet.php?projet=<?= $dossier?>">
+			<a href="projet.php?projet=<?= $dossier?>">
+			<div class="card">
+				<div class="side front">
 					<img src="<?= $dossier?>/vignette.jpg" alt="">
-				</a>
+				</div>
+				<div class="side back">
+					
+					<?php $data = json_decode(file_get_contents("$dossier/data.json")) ?>
+
+					<h2><?= $data->nom ?></h2>
+					<h3><?= $data->titre ?></h3>
+				</div>
 			</div>
-			<div class="back">
-				<h2>nom</h2>
-				<h3>titre</h3>
-			</div>
+			</a>
 		</section>
+		<?php endif; ?>
 
 	<?php endforeach; ?>
 	</main>
-
-
 
 </body>
 </html>

@@ -1,0 +1,32 @@
+{
+	"nom":"Julia von Dorpp",
+	"titre":"Ex-TRACTS",
+	"description":"Les flyers de rave anglaise des années 1990 sont les témoins d’un phénomène emblématique dans la culture de la musique électronique. J'ai choisi de prélever méthodiquement 99 flyers de ma collection personnelle. L’idée est d'analyser dans un catalogue, chaque élément recadré; les photographies, les illustrations, les logos, les symboles, les cartes et les typographies. Le vernissage de cette édition a eu lieu sur internet et proposait aux spectateurs de vivre une soirée virtuelle dans laquelle ils pouvaient écouter les musiques des Djs présents sur les flyers sélectionnés. L’expérience commune de ce projet hybride tend à redonner vie à ces objets, tout en tenant compte de l’époque à laquelle on les regarde.",
+	"images":[
+		{
+			"fichier":"1.png",
+			"x":1100,
+			"y":820
+		},
+		{
+			"fichier":"2.jpg",
+			"x":5330,
+			"y":1400
+		},
+		{
+			"fichier":"3.jpg",
+			"x":6170,
+			"y":3820
+		},
+		{
+			"fichier":"4.jpg",
+			"x":5850,
+			"y":6660
+		},
+		{
+			"fichier":"5.jpg",
+			"x":1830,
+			"y":7240
+		}
+	]
+}

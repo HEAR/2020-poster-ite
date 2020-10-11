@@ -1,0 +1,17 @@
+{
+	"nom":"Pauline Desombre",
+	"titre":"Routes en asile",
+	"description":"Le voyage migratoire ne s'arrête pas une fois le point de destination atteint. La demande d'asile en France, là, à Strasbourg, c'est long. C'est une quantité innombrable de pdf indigestes. Des mois de recherches, de lectures, de rencontres pour comprendre, un peu. Route en Asile rend compte de ce cheminement de recherches théoriques et sur le terrain. Un catalogue de masse, dense, à la manière du sujet.<br>Valéry et sa fille Tariame sont arrivés il y a trois ans. Et puis les routes en Asile, c'est un récit qui raconte un peu de leur histoire ici. C'est aussi un témoignage de nos moments passés ensemble. Des moments confinés, et ceux retrouvés. Ils vivent, ils patientent, en attendant. Peut-être qu'ils vont bientôt trouver l'asile, ou peut-être qu'ils s'envoleront à nouveau par dessus la Méditerranée.",
+	"images":[
+		{
+			"fichier":"1.jpg",
+			"x":1440,
+			"y":8620
+		},
+		{
+			"fichier":"2.jpg",
+			"x":6320,
+			"y":6000
+		}
+	]
+}

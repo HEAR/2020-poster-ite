@@ -1,101 +1,128 @@
 :root{
-	--couleur:blue;
+	--couleur: blue;/*:#3B44AD;*/
 }
 
 *{
 	box-sizing: border-box;
 }
 
+html{
+	font-size: 40px;
+}
+
 body{
 	font-family: 'Helvetica', 'Arial', sans-serif;
 	color: var(--couleur);
-	background: cyan;
+	background: var(--couleur);
 }
 
-html, body, #map {
+html, body, #map , iframe{
 	width:100%;
 	height:100%;
 	margin:0;
 	padding:0; 
 }
+#map{
+	position: relative;
+	z-index: 50;
+	transition: opacity 1s ease-in-out;
+}
+.leaflet-container{
+	background: var(--couleur);
+}
+
+
+a{
+	color: #FFF;
+	text-decoration: none;
+}
 
 
 nav{
 	display: flex;
-	padding: 0 100px 50px;
-	margin-top: 50px;
+	padding: 0 1rem 1rem;
+	margin-top: 1rem;
 	justify-content: space-between;
 	position: fixed;
 	left: 0;
 	right: 0;
-	top:10px;
+	top:0;
 	z-index: 400;
+	mix-blend-mode: difference;
 	/*background: #F00;*/
+	pointer-events: none;
 }
 
 nav>*{
 	background: none;
 	border: 0;
-	font-size: 40px;
-	line-height: 1.15em;
+	font-size: 1rem;
+	line-height: 1rem;
 	padding: 0;
 	margin: 0;
-	color: var(--couleur);
+	color: #FFF;
 	font-weight: normal;
 	text-align: baseline;
+	pointer-events: auto;
 }
 
-#map{
-	position: relative;
-	z-index: 100;
+nav button{
+	cursor: pointer;
 }
 
-.leaflet-container{
-	background: cyan;
+nav>span{
+	margin-left: 1rem;
+	margin-right: auto;
 }
+
+
+
+
+
 
 main{
+	margin: 3rem 1rem 1rem;
+	padding-bottom: 1rem;
 	position: relative;
 	display: grid;
 	grid-gap: 0;
-	grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+	grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
 	grid-auto-rows: var(--pas);
-	/*margin-top: calc(3 * var(--pas));*/
-	/*padding: 0;*/
-	/*padding-bottom: calc(var(--pas) * 2);*/
+	transition: opacity 1s ease-in-out;
 }
-
+main.hidden,
+#map.hidden{
+	opacity: .2;
+}
 section{
 	position: relative;
 	overflow: hidden;
 	/* CARD CSS */
 	/* https://codepen.io/desandro/pen/LmWozd */
 	cursor: pointer;
+}
+.card{
 	transform-style: preserve-3d;
 	transform-origin: center right;
 	transition: transform 1s;
 }
-
-section.is-flipped {
+section:hover .card,
+section.hover .card{
 	transform: translateX(-100%) rotateY(-180deg);
 }
-
-section div {
+.card .side{
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility:    hidden;
 	-ms-backface-visibility:     hidden;
 	backface-visibility: 		 hidden;
 }
-
-
-
-section div.front>img{
+.card div.front>img{
 	max-width: 100%;
 	max-height: 100%; 
 	display: block;
+	filter: grayscale(100%);
 }
-
-section div.back{
+.card div.back{
 	position: absolute;
 	top:0;
 	bottom: 0;
@@ -105,24 +132,46 @@ section div.back{
 	background: #FFF;
 	color: #000;
 	transform: rotateY(180deg);
+	text-align: left;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
+.card h2,
+.card h3{
+	color: var(--couleur);
+	font-weight: normal;
+	font-size: 1rem;
+	margin: 0;
+}
+.card h3{
+	text-align: right;
+}
+
+
 
 #about{
 	position: fixed;
-	top: 50px;
-	left:50px;
-	right: 50px;
-	bottom:50px;
-	background: red;
-	z-index: 300;
-	padding: 50px;
-	pointer-events: none;
+	top: 3rem;
+	left:1rem;
+	right: 1rem;
+	bottom:1rem;
+	/*background: red;*/
+	z-index: 400;
+	padding: 0;
+	/*pointer-events: none;*/
+	color: #FFF;
+	mix-blend-mode: difference;
+	overflow-y: auto;
 }
-
 #about p{
 	margin: 0;
 	font-size:40px;
 	/*font-weight: bold;*/
+}
+#about p+p{
+	margin-top: 40px;
 }
 
 #about p:first-child{
@@ -132,18 +181,85 @@ section div.back{
 
 #cadre{
 	position: fixed;
-	top: 50px;
-	left:50px;
-	right: 50px;
-	bottom:50px;
-	background: red;
-	z-index: 300;
-	display: flex;
+	top: 0px;
+	left:0px;
+	right: 0px;
+	bottom:0px;
+	overflow: hidden;
+	transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+	pointer-events: none;
+	z-index: 100;
 }
 
-#cadre img{
+.cadre{
+	position: fixed !important;
+	max-width: 100vw;
+	max-height: 100vh;
+	min-height: 300px;
+	min-width: 300px;
+	z-index: 300;
+	pointer-events: auto;
+}
+
+#cadre.hidden{
+	filter: grayscale(100%);
+	opacity: .2;
+}
+
+.cadre img{
 	display: block;
 	max-width: 100%;
 	max-height: 100%;
 	margin: auto;
+	box-shadow: rgba(0,0,255, .5) 0 0 50px;
+}
+
+.cadre>button{
+	position: absolute;
+	font-size: 1rem;
+	line-height: 1rem;
+	mix-blend-mode: difference;
+	color: #FFF;
+	top:.5rem;
+	right:.5rem;
+	background: none;
+	border:none; 
+}
+
+
+
+
+.leaflet-bar{
+	box-shadow: none;
+}
+.leaflet-left .leaflet-control{
+	margin: auto;
+	background: none;
+}
+.leaflet-bar a:first-child,
+.leaflet-bar a:last-child{
+	border-radius: 0;
+	background: none;
+}
+.leaflet-bar a, .leaflet-control-layers-toggle{
+	background: none;
+}
+.leaflet-bar a, .leaflet-bar a:hover{
+	background: none;
+	border: 0;
+	position: fixed;
+	bottom: 1rem;
+	z-index: 140;
+	font-size: 1rem;
+
+	color: #FFF;
+}
+.leaflet-control-zoom-in{
+	left: 1rem;
+}
+.leaflet-control-zoom-out{
+	right: 1rem;
+}
+.leaflet-container .leaflet-control-attribution{
+	display: none !important;
 }
